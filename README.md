@@ -111,13 +111,11 @@ docs/             README screenshots
 
 BookPortal began as a Web Development course project at the **University of Jeddah** by:
 
-| Name | Role |
-| --- | --- |
-| Rital Yahyah Alghates | Frontend Developer |
-| Shatha Miklid AlOtaibi | Frontend Developer |
-| Lina Saleh Alshehri | Database Manager |
-| Jana Saeed Alghamdi | UI/UX Designer |
-| Shahad Ahmed | Backend Developer |
+- Rital Yahyah Alghates
+- Shatha Miklid AlOtaibi
+- Lina Saleh Alshehri
+- Jana Saeed Alghamdi
+- Shahad Ahmed
 
 This version is a redesign and extension of that project: a new design system, an interactive catalogue, a
 database-free server and a static demo mode. The original team repository is
