@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BookPortal – Lend, borrow and request textbooks</title>
+  <meta name="description" content="BookPortal is a textbook lending platform where students and book owners can lend, borrow, or request textbooks from each other." />
+  <meta name="theme-color" content="#241812" />
+  <link rel="icon" href="assets/img/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="home">
+  <header id="site-header"></header>
+
+  <main>
+    <section class="hero" style="padding:0">
+      <div class="container">
+        <div>
+          <span class="eyebrow">📚 Textbook lending for students</span>
+          <h1>Share textbooks. Save money. <em>Learn together.</em></h1>
+          <p class="lead">BookPortal is a textbook lending platform where students and book owners can lend, borrow, or request textbooks from each other.</p>
+          <form class="hero-search" id="hero-search" role="search">
+            <input type="search" placeholder="Search a title, author or subject…" aria-label="Search books" />
+            <button class="btn" type="submit">Search</button>
+          </form>
+          <div class="quick-chips">
+            <a href="exchange.html?cat=Science">🔬 Science</a>
+            <a href="exchange.html?cat=Technology">💻 Technology</a>
+            <a href="exchange.html?cat=Mathematics">➗ Mathematics</a>
+            <a href="exchange.html?cat=Literature">📖 Literature</a>
+            <a href="exchange.html?cat=Business">📈 Business</a>
+          </div>
+        </div>
+        <div class="book-stack" aria-hidden="true">
+          <div class="bk b1"><img src="assets/img/book1.jpg" alt="" /></div>
+          <div class="bk b2"><img src="assets/img/book2.jpg" alt="" /></div>
+          <div class="bk b3"><img src="assets/img/book3.jpg" alt="" /></div>
+          <div class="badge-float f1"><i>🤝</i> Lend &amp; borrow</div>
+          <div class="badge-float f2"><i>💸</i> Low or no cost</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="stats">
+      <div class="container">
+        <div class="stats-grid reveal">
+          <div class="stat"><b data-count="books">0</b><span>Books in the exchange</span></div>
+          <div class="stat"><b data-count="cats">0</b><span>Subject categories</span></div>
+          <div class="stat"><b data-count="types">0</b><span>Ways to exchange</span></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="how">
+      <div class="container">
+        <div class="section-head reveal"><span class="kicker">How it works</span><h2>Three steps to your next textbook</h2><p>Connect with students and book owners — no fees, no hassle.</p></div>
+        <div class="steps">
+          <div class="step reveal"><div class="ico">🔎</div><h3>Find</h3><p>Search the catalogue by title, author or subject and filter by condition and exchange type.</p></div>
+          <div class="step reveal"><div class="ico">🤝</div><h3>Connect</h3><p>Request a book, offer yours, or ask for a hard-to-find title and get matched with a fellow student.</p></div>
+          <div class="step reveal"><div class="ico">🎓</div><h3>Learn</h3><p>Borrow, study, and pass it on. Every shared book makes education more accessible.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal"><span class="kicker">Fresh on the shelf</span><h2>Featured books</h2><p>A taste of what the community is sharing right now.</p></div>
+        <div class="books-grid" id="featured"></div>
+        <div style="text-align:center;margin-top:36px"><a class="btn dark" href="exchange.html">Browse all books →</a></div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head reveal"><span class="kicker">Our services</span><h2>What we offer to our community</h2></div>
+        <div class="service-grid">
+          <div class="service reveal"><img src="assets/img/book.png" alt="" /><div><small>Borrow books easily</small><h3>Book Lending</h3><p>Connect with students and borrow textbooks conveniently.</p></div></div>
+          <div class="service reveal"><img src="assets/img/books.png" alt="" /><div><small>Find the books you need</small><h3>Book Requests</h3><p>Request books and get notified when they are available.</p></div></div>
+          <div class="service reveal"><img src="assets/img/diversity.png" alt="" /><div><small>Collaborative learning</small><h3>Community</h3><p>Engage with fellow students and share resources.</p></div></div>
+          <div class="service reveal"><img src="assets/img/sale.png" alt="" /><div><small>Save money</small><h3>Affordable Books</h3><p>Access textbooks at low or no cost through sharing.</p></div></div>
+          <div class="service reveal"><img src="assets/img/digital-library.png" alt="" /><div><small>Buy easily</small><h3>Digital Books</h3><p>Reach millions of readers around the world on Amazon.</p></div></div>
+          <div class="service reveal"><img src="assets/img/tracking-app.png" alt="" /><div><small>Stay updated</small><h3>Book Tracking</h3><p>Track the books you borrow or lend in real time.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split">
+        <div class="reveal">
+          <span class="section-head kicker" style="font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--caramel)">Our mission</span>
+          <h2>Find out more about BookPortal</h2>
+          <p>BookPortal was founded with the mission of making education more accessible by providing a platform where students can share textbooks effortlessly. We believe in the power of community-driven learning and strive to bridge the gap between those who have books and those who need them.</p>
+          <ul class="check-list">
+            <li><span><b>Book Lending</b> — borrow books from other students easily and conveniently.</span></li>
+            <li><span><b>Book Requests</b> — request a specific book and get notified when it becomes available.</span></li>
+            <li><span><b>Community</b> — share knowledge and contribute to a collaborative learning environment.</span></li>
+          </ul>
+        </div>
+        <div class="panel-visual reveal"><img src="assets/img/img_bookCollect_USv1.png" alt="A collection of book covers" /></div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box reveal">
+          <h2>Ready to join our community?</h2>
+          <p>Start sharing or borrowing books today and be part of our growing educational network.</p>
+          <div class="row">
+            <a href="exchange.html" class="btn">Borrow books</a>
+            <a href="exchange.html?list=1" class="btn light">Share a book</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>

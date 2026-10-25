@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | BookPortal</title>
+  <meta name="description" content="Get in touch with the BookPortal team." />
+  <meta name="theme-color" content="#241812" />
+  <link rel="icon" href="assets/img/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+  <script src="assets/js/contact.js" defer></script>
+</head>
+<body data-page="contact">
+  <header id="site-header"></header>
+
+  <main>
+    <div class="page-head">
+      <div class="container">
+        <span class="eyebrow">✉️ We'd love to hear from you</span>
+        <h1>Contact us</h1>
+        <p>Questions, ideas or a book you can't find? Send us a message and we'll get back to you.</p>
+      </div>
+    </div>
+
+    <section style="padding-top:60px">
+      <div class="container contact-wrap">
+        <div>
+          <div class="info-card reveal"><span class="ico">📍</span><div><b>Visit us</b><span>University of Jeddah, Faisaliyah Campus</span></div></div>
+          <div class="info-card reveal"><span class="ico">✉️</span><div><b>Email</b><span>book999@bookportal.com</span></div></div>
+          <div class="info-card reveal"><span class="ico">📞</span><div><b>Phone</b><span>(123) 456-7890</span></div></div>
+          <div id="messages" class="messages"></div>
+        </div>
+
+        <div class="form-card reveal">
+          <form id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="fg"><label for="Fname">First name</label><input id="Fname" name="Fname" maxlength="12" placeholder="e.g. Zahra" autocomplete="given-name" /><div class="err"></div></div>
+              <div class="fg"><label for="Lname">Last name</label><input id="Lname" name="Lname" maxlength="12" placeholder="e.g. Alanazi" autocomplete="family-name" /><div class="err"></div></div>
+              <div class="fg"><label for="gender">Gender</label><select id="gender" name="gender"><option value="">Select</option><option>Male</option><option>Female</option></select><div class="err"></div></div>
+              <div class="fg"><label for="mobile">Mobile</label><input id="mobile" name="mobile" type="tel" maxlength="10" inputmode="numeric" placeholder="e.g. 0505555555" autocomplete="tel" /><div class="err"></div></div>
+              <div class="fg"><label for="DB">Date of birth</label><input id="DB" name="DB" type="date" autocomplete="bday" /><div class="err"></div></div>
+              <div class="fg"><label for="language">Language of communication</label><select id="language" name="language"><option value="">Select</option><option>Arabic</option><option>English</option><option>French</option></select><div class="err"></div></div>
+              <div class="fg wide"><label for="email">Email address</label><input id="email" name="email" type="email" maxlength="50" placeholder="name@domain.com" autocomplete="email" /><div class="err"></div></div>
+              <div class="fg wide"><label for="message">Message</label><textarea id="message" name="message" maxlength="500" placeholder="Enter comments here…"></textarea><div class="counter"><span id="chars">0</span>/500</div></div>
+            </div>
+            <button class="btn full" style="margin-top:20px" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <div class="section-head reveal"><span class="kicker">FAQ</span><h2>Quick answers</h2></div>
+        <div class="faq">
+          <details class="reveal"><summary>How does book lending work?</summary><p>Browse the Book Exchange, open a book and send a request to its owner. Agree on the details directly and return the book when you're done.</p></details>
+          <details class="reveal"><summary>Can I ask for a book that isn't listed?</summary><p>Yes. Use "List a book" and choose the <b>Request</b> type — other students can reach out if they have a copy.</p></details>
+          <details class="reveal"><summary>Does it cost anything?</summary><p>BookPortal is about sharing, so books are available at low or no cost.</p></details>
+          <details class="reveal"><summary>How do I remove a book I listed?</summary><p>Your listings are tagged "Yours" on the exchange page — use the bin button on the card to remove one.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>

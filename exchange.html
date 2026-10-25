@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Exchange | BookPortal</title>
+  <meta name="description" content="Browse, lend, borrow and request textbooks on the BookPortal exchange." />
+  <meta name="theme-color" content="#241812" />
+  <link rel="icon" href="assets/img/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+  <script src="assets/js/exchange.js" defer></script>
+</head>
+<body data-page="exchange">
+  <header id="site-header"></header>
+
+  <main>
+    <div class="page-head">
+      <div class="container">
+        <span class="eyebrow">🔄 Book Exchange</span>
+        <h1>Share knowledge, save resources</h1>
+        <p>Connect with students and educators to lend, borrow, and exchange academic textbooks. Build a community of readers while reducing costs.</p>
+      </div>
+    </div>
+
+    <div class="container" style="padding-bottom:80px">
+      <div class="toolbar">
+        <div class="toolbar-row">
+          <div class="field"><i>🔍</i><input id="q" type="search" placeholder="Search title, author or subject…" aria-label="Search books" /></div>
+          <div class="seg" id="type-seg" role="group" aria-label="Exchange type">
+            <button class="on" data-type="All">All</button><button data-type="Lend">Lend</button><button data-type="Borrow">Borrow</button><button data-type="Request">Request</button>
+          </div>
+          <select id="sort" aria-label="Sort books"><option value="newest">Newest first</option><option value="title">Title A–Z</option><option value="condition">Best condition</option></select>
+          <button class="btn sm" data-list>+ List a book</button>
+        </div>
+        <div class="chip-row" id="cat-chips" aria-label="Categories"></div>
+      </div>
+
+      <div class="result-bar"><div><b id="count">0 books</b> <span id="count-sub"></span></div><span id="mode-note" style="font-size:13.5px"></span></div>
+
+      <div class="books-grid" id="books-grid"></div>
+      <div class="empty" id="empty"><b>No books match your search 📭</b>Try another keyword — or <button class="btn sm ghost" id="reset" style="margin-left:6px">reset filters</button></div>
+    </div>
+  </main>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true"><div class="modal-card"><button class="x" aria-label="Close">✕</button><div id="modal-body"></div></div></div>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>
