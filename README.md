@@ -118,8 +118,7 @@ BookPortal began as a Web Development course project at the **University of Jedd
 - Shahad Ahmed
 
 This version is a redesign and extension of that project: a new design system, an interactive catalogue, a
-database-free server and a static demo mode. The original team repository is
-[lenaS7/BookPortal-webdev](https://github.com/lenaS7/BookPortal-webdev).
+database-free server and a static demo mode.
 
 ## ℹ️ Notes
 
