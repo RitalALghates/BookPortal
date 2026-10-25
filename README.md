@@ -111,7 +111,7 @@ docs/             README screenshots
 
 BookPortal began as a Web Development course project at the **University of Jeddah** by:
 
-- Rital Yahyah Alghates
+- ENG. Rital Yahya Alghates
 - Shatha Miklid AlOtaibi
 - Lina Saleh Alshehri
 - Jana Saeed Alghamdi
